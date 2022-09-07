@@ -1,0 +1,14 @@
+.container-calculate {
+    .container-calculate-freight {
+        padding: 1em;
+        border: solid 2px;
+        border-color: $color_two;
+        border-radius: 32px;
+    
+        .btn_generate_cost_table:disabled {
+            pointer-events: none;
+            background-color: #d0d0d0;
+        }
+    }
+}
+

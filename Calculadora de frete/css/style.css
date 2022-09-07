@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+header {
+  background-color: #000A1E;
+  position: fixed;
+  display: flex;
+  top: 0;
+  width: 100%;
+  height: 64px;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+  z-index: 1;
+}
+header .header-logo {
+  margin: 0 3%;
+}
+header .header-logo img {
+  display: block;
+  margin: auto;
+  width: 100px;
+  height: 40px;
+}
+
+footer {
+  background-color: #000A1E;
+  justify-content: center;
+  height: 64px;
+  width: 100%;
+  display: flex;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+footer p {
+  display: block;
+  margin: auto;
+  color: #F9F9F9;
+}
+footer p a {
+  color: #F9F9F9;
+}
+
+.form-calculate-shipping {
+  margin: 0;
+}
+.form-calculate-shipping input {
+  width: 100%;
+}
+
+.container-calculate .container-calculate-freight {
+  padding: 1em;
+  border: solid 2px;
+  border-color: #000A1E;
+  border-radius: 32px;
+}
+.container-calculate .container-calculate-freight .btn_generate_cost_table:disabled {
+  pointer-events: none;
+  background-color: #d0d0d0;
+}
+
+.card {
+  width: 100%;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding: 20px;
+  border: solid 1px;
+  border-radius: 10px;
+}
+.card p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.card-info {
+  background-color: rgba(145, 145, 255, 0.1843137255);
+  border-color: #9191ff;
+}
+
+.card-error {
+  border-color: #ff6b6b;
+  background-color: rgba(255, 107, 107, 0.1843137255);
+}
+
+.input-error {
+  border-color: #ff6b6b !important;
+  background-color: rgba(255, 107, 107, 0.1843137255) !important;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  background-color: #F9F9F9;
+  font-family: "Nunito", sans-serif;
+}
+
+.content {
+  min-height: 100%;
+  position: relative;
+}
+
+main {
+  padding-bottom: 84px;
+  margin-top: 104px;
+}
+
+/*# sourceMappingURL=style.css.map */

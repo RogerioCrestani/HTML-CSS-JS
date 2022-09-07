@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Calcular valor do frete">
+    <meta name="author" content="Rogerio Crestani">
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+    <title>Calculadora do caminhoneiro</title>
+</head>
+<body>
+    <div class="content">
+
+        <!--Header-->
+        <header class="header">
+            <div class="header-logo">
+                <a href="./index.html">
+                    <img src="images/logo_frete10.png" alt="Frete 10">
+                </a>
+            </div>
+        </header>
+    
+    <main>
+        <div class="container">
+            <div id="flash-message-main">
+                <!--JS adicionara uma mensagem se solicitado-->
+            </div>
+        </div>
+        <!--Calcular frete-->
+        <section>
+            <div class="container container-calculate">
+                <div class="row">
+                    <!--Formulario para calcular lucro no frete-->
+                    <div class="twelve columns">
+                        <div class="container container-calculate-freight u-full-width">
+                            <div id="calculate-profit-freight">
+                                <div id="flash-message-form">
+                                    <!--JS adicionara uma mensagem se solicitado-->
+                                </div>
+                                <h3>Calcular valor do frete: </h3>
+                                <form class="form-calculate-shipping" id="form-calculate-shipping">
+                                    <div class="row">
+                                        <div class="six columns">
+                                            <label for="distance">Distancia(km): </label>
+                                            <input type="number" name="distance" id="distance">
+                                        </div>
+                                    </div>
+                
+                                    <div class="row">
+                                        <div class="six columns">
+                                            <label for="fuel-price">Preço do combustível(R$): </label>
+                                            <input type="number" name="fuel-price" id="fuel-price">
+                                        </div>
+                                        <div class="six columns">
+                                            <label for="vehicle-consumption">Consumo do veículo(km/l): </label>
+                                            <input type="number" name="vehicle-consumption" id="vehicle-consumption">
+                                        </div>
+                                    </div>
+                
+                                    <div class="row">
+                                        <div class="six columns">
+                                            <label for="other-costs">Outros custos(R$): </label>
+                                            <input type="number" name="other-costs" id="other-costs">
+                                        </div>
+                                        <div class="six columns">
+                                            <label for="profit-percentage">Percentual de lucro(%): </label>
+                                            <input type="number" name="profit-percentage" id="profit-percentage">
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="six columns">
+                                            <input type="submit" name="calculate" id="calculate" value="Calcular">
+                                        </div>
+                                    </div>
+                                </form>
+
+                                <hr>
+
+                                <div class="row">
+                                    <div class="six columns">
+                                        <label for="result">Resultado: </label>
+                                        <input type="text" disabled="true" name="result" id="result">
+                                    </div>
+                                </div>
+
+                                <hr>
+
+                                <div class="row">
+                                    <div class="six columns">
+                                        <input type="button" class="btn-generate-cost-table" id="generate-cost-table" value="Gerar tabela de custos" onclick="generateCostTable()">
+                                    </div>
+                                    <div class="six columns">
+                                        <input type="submit" name="generate-budget" id="generate-budget" value="Gerar orçamento(PDF)" onclick="generateBudgetPDF()">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div id="cost-table">
+                                        <!--JS criara a tabela caso solicitado.-->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer class="footer">
+        <p>Desenvolvido por <a href="#">Rogerio Crestani</a></p>
+    </footer>
+
+    </div>
+
+    <script src="js/calculate.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.4.1/jspdf.debug.js" integrity="sha384-THVO/sM0mFD9h7dfSndI6TS0PgAGavwKvB5hAxRRvc0o9cPLohB0wb/PTA7LdUHs" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+.card {
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 20px;
+    border: solid 1px;
+    border-radius: 10px;
+
+    p{
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+}
+
+.card-info {
+    background-color: #9191ff2f;
+    border-color: #9191ff;
+}
+
+.card-error{
+    border-color: #ff6b6b;
+    background-color: #ff6b6b2f;
+}
+
+.input-error{
+    border-color: #ff6b6b !important;
+    background-color: #ff6b6b2f !important;
+}
